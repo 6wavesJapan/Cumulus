@@ -1,0 +1,17 @@
+language: cpp
+
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq libssl-dev libluajit-5.1-dev
+
+install:
+ - wget http://pocoproject.org/releases/poco-1.4.6/poco-1.4.6p4.tar.gz
+ - tar xvf poco-1.4.6p4.tar.gz
+ - pushd poco-1.4.6p4/
+ -   ./configure --omit=Data/MySQL,Data/ODBC,Zip --no-tests --no-samples
+ -   make
+ -   sudo make install
+ - popd
+
+script:
+ - sh build.sh
