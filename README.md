@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/6wavesJapan/Cumulus.svg?branch=master)](https://travis-ci.org/6wavesJapan/Cumulus)
+
 CumulusServer is a complete open source and cross-platform RTMFP server extensible by way of scripting.
 
 CumulusServer has been developed under [GPL license] in keeping in mind the 4 following notions: *speed*, *light weight*, *cross-platform* and *scalable*.
